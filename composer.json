@@ -1,0 +1,19 @@
+{
+    "name": "ghopper/CurlOverTor",
+    "description": "Wrapper for CURL, which uses TOR server as socks5 proxy.",
+    "license": "MIT",
+    "keywords": ["curl,tor,socks5,proxy"],
+    "authors": [
+        {
+            "name": "Nikolay Poryadin",
+            "email": "np25071984@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "ghopper\\": "src"
+        }
+    }
+}
