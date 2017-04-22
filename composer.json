@@ -2,7 +2,7 @@
     "name": "ghopper/curl_over_tor",
     "description": "Wrapper for CURL, which uses TOR server as socks5 proxy.",
     "license": "MIT",
-    "keywords": ["curl,tor,socks5,proxy"],
+    "keywords": ["curl tor socks5 proxy"],
     "authors": [
         {
             "name": "Nikolay Poryadin",
