@@ -14,10 +14,9 @@ $curtor = new CurlOverTor('127.0.0.1', $proxy, '1234');
 ```
 I recommend work with at least 3 proxy ports for better performance. With only one port we spend much time for connection setup while with many ports we just switch current connection to another one, already prepared for data transfer.
 
-Look at the *examples* folder for more information.
+Look at the *example* folder for more information.
 
 ## Available methods
- * setAuthCode($code);
  * setMaxQueryCount($count=10);
  * setopt($opt,$val);
  * exec($url=NULL);

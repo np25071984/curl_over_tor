@@ -4,11 +4,6 @@ use ghopper\CurlOverTorException;
 
 interface ICurlOverTor {
     /*
-     * Set control port password
-     */
-    function setAuthCode($code);
-
-    /*
      * Set maximum amount of queries per ip
      */
     function setMaxQueryCount($count=10);
@@ -54,11 +49,6 @@ class CurlOverTor implements ICurlOverTor
         $s = "{$this->proxy}:{$this->aPort[$this->curPort]['port']}";
         $this->setopt(CURLOPT_PROXY, $s);
         $this->setopt(CURLOPT_PROXYTYPE, CURLPROXY_SOCKS5);
-    }
-
-    function setAuthCode($code) {
-        echo 'Setup auth code: ',$code,PHP_EOL;
-        $this->authCode = $code;
     }
 
     function setMaxQueryCount($count=10) {
