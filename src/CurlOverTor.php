@@ -38,6 +38,7 @@ class CurlOverTor implements ICurlOverTor
     const DEFAULT_MAX_QUERY_COUNT = 5;
 
     function __construct($proxy='127.0.0.1', array $aPort=array(), $authCode='') {
+        // TODO: add php_curl extention check
         if (count($aPort) == 0)
             throw new CurlOverTorException('You have to specify at least one port!');
 
